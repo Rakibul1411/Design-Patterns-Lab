@@ -1,5 +1,3 @@
-package lab_01_factory_pattern_method.solutionCodes;
-
 import java.util.Scanner;
 
 public class Main {

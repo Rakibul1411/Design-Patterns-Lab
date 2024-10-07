@@ -1,4 +1,3 @@
-package lab_01_factory_pattern_method.solutionCodes;
 
 public class TabletFactory extends DeviceFactory{
 
