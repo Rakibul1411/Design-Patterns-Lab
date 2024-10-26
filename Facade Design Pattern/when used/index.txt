@@ -1,0 +1,2 @@
+When we have to 'Hide' the 'System Complexity' from the
+Client
