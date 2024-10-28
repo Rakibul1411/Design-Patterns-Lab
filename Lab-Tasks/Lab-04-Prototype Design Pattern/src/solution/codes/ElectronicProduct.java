@@ -13,9 +13,6 @@ class ElectronicProduct extends ProductPrototype {
     // Constructor for deep copying using getters
     public ElectronicProduct(ElectronicProduct source) {
         super(source.getName(), source.getCategory(), source.getPrice());
-        this.name = source.getName();
-        this.category = source.getCategory();
-        this.price = source.getPrice();
         this.storageCapacity = source.getStorageCapacity();
         this.batteryLife = source.getBatteryLife();
     }

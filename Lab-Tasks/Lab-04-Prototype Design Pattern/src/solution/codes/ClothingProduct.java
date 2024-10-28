@@ -13,9 +13,6 @@ class ClothingProduct extends ProductPrototype {
     // Constructor for deep copying using getters
     public ClothingProduct(ClothingProduct source) {
         super(source.getName(), source.getCategory(), source.getPrice());
-        this.name = source.getName();
-        this.category = source.getCategory();
-        this.price = source.getPrice();
         this.color = source.getColor();
         this.size = source.getSize();
     }
