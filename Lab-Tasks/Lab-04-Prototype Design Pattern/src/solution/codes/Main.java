@@ -19,6 +19,8 @@ public class Main {
             System.out.println("Original: " + smartphoneClone);
         }
 
+        System.out.println("\n");
+
         // Customizing clones
         ClothingProduct customTShirt = new ClothingProduct((ClothingProduct) tShirtClone);
         customTShirt = new ClothingProduct(customTShirt.getName(), customTShirt.getPrice(), "Red", "L");
@@ -27,5 +29,18 @@ public class Main {
         ElectronicProduct customSmartphone = new ElectronicProduct((ElectronicProduct) smartphoneClone);
         customSmartphone = new ElectronicProduct(customSmartphone.getName(), customSmartphone.getPrice(), 256, 36);
         System.out.println("Customized Smartphone: " + customSmartphone);
+
+        System.out.println("\n");
+
+        ProductPrototype tShirtClone1 = registry.getPrototype("Basic T-Shirt");
+        if (tShirtClone1 != null) {
+            System.out.println("Original: " + tShirtClone1);
+        }
+
+        ProductPrototype smartphoneClone1 = registry.getPrototype("Smartphone");
+        if (smartphoneClone1 != null) {
+            System.out.println("Original: " + smartphoneClone1);
+        }
+
     }
 }

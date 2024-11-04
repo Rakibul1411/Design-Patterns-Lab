@@ -32,8 +32,8 @@ class AccountService {
     }
 
     public boolean checkBalance(String cardNumber, double amount) {
-        AccountInfo accountData = accounts.get(cardNumber);
-        if (accountData != null && accountData.getBalance() >= amount) {
+        AccountInfo accountInfo = accounts.get(cardNumber);
+        if (accountInfo != null && accountInfo.getBalance() >= amount) {
             System.out.println("Sufficient balance verified.");
             return true;
         } else {
@@ -43,10 +43,10 @@ class AccountService {
     }
 
     public void deductBalance(String cardNumber, double amount) {
-        AccountInfo accountData = accounts.get(cardNumber);
-        if (accountData != null) {
-            accountData.deductBalance(amount);
-            System.out.println("Deducted $" + amount + " from balance. Remaining balance: $" + accountData.getBalance());
+        AccountInfo accountInfo = accounts.get(cardNumber);
+        if (accountInfo != null) {
+            accountInfo.deductBalance(amount);
+            System.out.println("Deducted $" + amount + " from balance. Remaining balance: $" + accountInfo.getBalance());
         }
     }
 }
