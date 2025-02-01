@@ -1,0 +1,5 @@
+Remedies of Lazy Class -->
+1. Collapse Hierarchy
+2. Inline Class
+
+same as Speculative Generality Collapse hierarchy and Inline class

@@ -1,0 +1,7 @@
+Remedies of Long Method:
+1. Extract Method,
+2. Replace Temp with Query,
+3. Introduce Parameter Object,
+4. Preserve Whole Object,
+5. Replace Method with Method Object,
+6. Decompose Conditional
